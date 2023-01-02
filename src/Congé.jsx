@@ -1,18 +1,18 @@
+import { Button, Stack } from '@mui/material'
 import React from 'react'
+import DatePicker from './DatePicker'
 
 export default function Congé() {
   return (
-    <div>
+    <div className='bodyCongé'>
 
-<h3>Demande de congé</h3>
+<h3 className='TCongé'  >Demande de congé</h3>
 
-                  <br>
-                  </br>
-
-                  <p>sélectionnez la date souhaitée   // calendrier </p>
+<p className='Para'>selectionnez votre type de congé :</p>
 
                   <br></br>
-                  <select class="form-select" aria-label="Default select example">
+        
+                  <select className='InputSelect'>
                         <option selected>type de congés</option>
                         <option value="1">congé annuel</option>
                         <option value="2">congé maladie</option>
@@ -20,7 +20,7 @@ export default function Congé() {
 
                   </select>
 
-
+<DatePicker/>
                   <br>
                   </br>
                   <br>
@@ -31,17 +31,27 @@ export default function Congé() {
                   <br>
                   </br>
 
+                  <br>
+                  </br>
+                  
+                  
+                  
+                
+                  
+                 
+             
+                  <Stack direction="row" spacing={3}>
+      <Button variant="contained" color="success">
+        envoyé 
+      </Button>
+      <Button variant="outlined" color="error">
+        Annulé
+      </Button>
+    </Stack>
 
-                  <Stack direction="row" spacing={2}>
-                          <Button variant="outlined">Envoyé</Button>
-                          <Button variant="outlined" disabled>
-                           Annuler
-                          </Button>
-      
-                          </Stack>
 
 
-
+                
     </div>
   )
 }

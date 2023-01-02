@@ -18,8 +18,7 @@ import { width } from '@mui/system';
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
     
-    left: false,
-    
+     left: false,
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -46,7 +45,7 @@ export default function TemporaryDrawer() {
       
  
  />
-      <List>
+      <List className='listDrawer'>
 
 
         {['Profile', 'Demande de congé ', 'Autorisation de sortie ', 'Mes demandes RH'].map((text, index) => (

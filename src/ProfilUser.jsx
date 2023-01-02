@@ -9,7 +9,10 @@ import TabUser from './TabUser';
 
 export default function ImageAvatars() {
   return (
-  
+  <div>
+    <br></br><br />
+    <br></br><br />
+
     <Stack direction="row" spacing={2}>
  
 
@@ -23,7 +26,7 @@ export default function ImageAvatars() {
   <TabUser/>
     </Stack>
 
-
+    </div>
 
   );
 }

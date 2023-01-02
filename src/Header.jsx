@@ -12,8 +12,8 @@ import PersonIcon from '@mui/icons-material/Person';
 
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1}}>
+      <AppBar >
         <Toolbar>
 
         <DrawerMui/>
@@ -28,7 +28,7 @@ export default function Header() {
            
             <MenuIcon />
           </IconButton> 
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 3 }}>
 Acceuil          </Typography>
           <Button color="inherit">Déconnection</Button>
           

@@ -1,57 +1,101 @@
-// import { Button } from 'bootstrap'
-// import React from 'react'
-// import BouttonAppBAR from './BouttonAppBAR'
-
-// export default function Admin() {
-
-
-    
-//   return (
-
-//     <div>
-
-//                  <BouttonAppBAR/> 
-//                <h3>Demande de congé</h3> 
-//                 <p>Date sortie  // ==> calendrier </p>      
-
-// <br></br>
-//         <select class="form-select" aria-label="Default select example">
-//   <option selected>type de congés</option>
-//   <option value="1">congé annuel</option>
-//   <option value="2">congé maladie</option>
-//   <option value="2">téléTravail</option>
-
-// </select>
-
-// <br>
-// </br>
-// <br>
-// </br>
-// <button>envoyer votre demande</button>
-// <br>
-// </br>
-// <h3>Demande d'autorisation de sortie</h3> 
+import React from 'react';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import { Avatar } from '@mui/material';
 
 
 
 
 
-// <div class="form-check">
-//   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-//   <label class="form-check-label" for="flexRadioDefault1">
-//   Matin 
-//   </label>
-// </div>
-// <div class="form-check">
-//   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-//   <label class="form-check-label" for="flexRadioDefault2">
-// Apres-midi </label>
-// </div>
-// <br>
-// </br>
-// <button>envoyer votre demande</button>
+export default function Admin() {
+  return (
+    <div>
+      <br></br>
+      <br></br><br />
+<h1>Employer Name & Info</h1>
+
+<table>
+
+<thead>
+
+  <tr>
+<th>Nom & Prénom</th>
+<th>Email-Pro</th>
+<th>Num-Tel</th>
+<th>Designation</th>
+<th>Note</th>
+</tr>
+</thead>
 
 
-//         </div>
-//   )
-// }
+<tbody>
+</tbody>
+<tr> 
+
+  
+  <td ><Avatar
+        alt="Remy Sharp"
+        src="/static/images/avatar/1.jpg"
+        sx={{ width: 80, height: 80 ,  }}
+      />AICHA MSALLEM</td>
+  <td>AICHAMSALLEM@jjkjjkjkgh</td>
+  <td>5859598477</td>
+  <td>front end developer</td>
+  <td>10/10</td><Stack direction="row" spacing={3}>
+      <Button color="secondary"> + Add User</Button>
+      <Button variant="contained" color="success">
+        Update
+      </Button>
+      <Button variant="outlined" color="error">
+        Delete
+      </Button>
+    </Stack>
+</tr>
+</table>
+
+
+
+<table>
+<tbody>
+</tbody>
+<tr>
+  <td><Avatar
+        alt="Remy Sharp"
+        src="/static/images/avatar/1.jpg"
+        sx={{ width: 80, height: 80 ,  }}
+      />xxxxxxxxxx</td>
+  <td>AICHAMSALLEM@jjkjjkjkgh</td>
+  <td>5859598477</td>
+  <td>front end developer</td>
+  <td>10/10</td>
+  <Stack direction="row" spacing={3}>
+      <Button color="secondary"> + Add User</Button>
+      <Button variant="contained" color="success">
+        Update
+      </Button>
+      <Button variant="outlined" color="error">
+        Delete
+      </Button>
+    </Stack></tr>
+</table>
+
+
+
+
+
+
+<div className='btnAdmin'>
+<Stack direction="row" spacing={3}>
+      <Button color="secondary"> + Add User</Button>
+      <Button variant="contained" color="success">
+        Update
+      </Button>
+      <Button variant="outlined" color="error">
+        Delete
+      </Button>
+    </Stack>
+
+    </div>
+    </div>
+  )
+}

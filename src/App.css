@@ -30,39 +30,38 @@ label{
   text-align: left;
   padding:0.25rem 0 ;
   
-  
-
 }
 
-input {
-  margin:0.5rem 0;
-  padding : 1rem;
-  border : none ;
-  border-radius: 10px;
+
+
+
+
+
+
+
+p{
+  font-weight: bold;
+  color: rgb(80, 148, 224);
+  font-size: 20px;
+  text-decoration: underline;
+  margin-left: 5px;
 }
 
-button {
-  border: none ;
-  background-color: white;
-  padding: 20px;
-  border-radius:10px ;
-  cursor: pointer;
-  color: rgb(89, 37, 138);
 
-}
+
 .link-btn{
   background: none;
   color : white;
   text-decoration: underline;
 }
 
+
+/* TabUser */
 .tab{
   color: rgb(90, 90, 90);
   padding-top: 120px;
   margin-left: -65px;
 
-  
-  
 }
 
  th, td {
@@ -70,11 +69,91 @@ button {
   margin: 10px;
   background-color:rgb(209, 202, 202);
 }
-button{
-background-color: rgb(0, 110, 255);
-margin-left: 20PX;
-}
-td{
-  padding-left: 500px;
 
+td{
+  padding-left: 100px;
+
+}
+
+
+
+/* Congé */
+
+.bodyCongé{
+  background-color: rgb(227, 239, 243);
+  padding-top: 20px;
+}
+
+.TCongé {
+  
+  color: rgb(80, 148, 224);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px ;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+.InputSelect{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px ;
+  padding-left: 35px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.btnCongé{
+  background-color: rgb(80, 148, 224);
+  margin: 10px;
+  margin-bottom: 1000px;
+  border: none ;
+  padding: 20px;
+  border-radius:10px ;
+  cursor: pointer;
+  color: rgb(89, 37, 138);
+}
+
+
+
+
+/* DataPicker */
+.InputNbrJours{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+
+}
+
+.inputDatePicker{
+  margin-left: 15px;
+  margin:0.5rem 0;
+  padding : 1rem;
+  border : none ;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+
+}
+.listDrawer{
+  color:red
+}
+
+
+.btnAdmin{
+  margin-top: 100px;
+}
+
+/* Autorisation de sortie  */
+.autorisation{
+  color: rgb(80, 148, 224);
+
+}
+
+
+.bodyAutorisation{
+ background-color: rgb(227, 239, 243);
+ padding-top: 20px;
+padding-bottom: 1000px;
 }

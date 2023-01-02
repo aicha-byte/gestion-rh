@@ -1,12 +1,20 @@
-import React from 'react'
+import { Button, Stack } from '@mui/material';
+import React from 'react';
+import Header from './Header';
 
 export default function Autorisation() {
   return (
-    <div>
+    <div className='bodyAutorisation'>
+ <br>
+                  </br>
+                  <br>
+                  </br>
+                  <br>
+                  </br> <br>
+                  </br>
 
-
-
-<h3>Demande d'autorisation de sortie</h3> 
+<Header/>
+<h3 className='autorisation'>Demande d'autorisation de sortie</h3> 
 
 
                   <br>
@@ -30,14 +38,14 @@ export default function Autorisation() {
                   <br>
                   </br>
                   
-                  <Stack direction="row" spacing={2}>
-                          <Button variant="outlined">Envoyé</Button>
-                          <Button variant="outlined" disabled>
-                           Annuler
-                          </Button>
-      
-                          </Stack>
-                  
+                  <Stack direction="row" spacing={3}>
+      <Button variant="contained" color="success">
+        envoyé 
+      </Button>
+      <Button variant="outlined" color="error">
+        Annulé
+      </Button>
+    </Stack>
 
 
     </div>
